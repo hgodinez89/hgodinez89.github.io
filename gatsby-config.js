@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const languages = require('./src/data/languages');
 
 module.exports = {
   plugins: [
@@ -29,6 +30,15 @@ module.exports = {
         display: "standalone",
         icon: "src/imgs/favicon.png",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyForNull: 'any',
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
+        prefixDefault: false,
+      }
     },
   ],
 }
