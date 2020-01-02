@@ -1,0 +1,49 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    @apply bg-gray-100;
+}
+
+/* It creates a selector for buttons */
+.btn{
+    @apply bg-purple-500 text-white font-bold rounded border-purple-700 py-2 px-4 border-b-4;
+}
+
+.repos-list{
+    columns: 3;
+    -moz-columns: 3;
+    column-rule: 1px solid;
+    @apply p-4;
+}
+
+.repos-list li{
+    break-inside: avoid-column;
+}
+
+.education-list{
+    columns: 3;
+    -moz-columns: 3;
+}
+
+.education-list li{
+    break-inside: avoid-column;
+}
+
+.medium-list{
+    columns: 2;
+    -moz-columns: 2;
+}
+
+.medium-list li{
+    break-inside: avoid-column;
+}
+
+.vertical-text{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    @apply bg-blue-200 text-purple-700 text-xs p-2 inline-block;
+}
