@@ -31,14 +31,6 @@ export default (props) => {
            return <Certificate data={certificate} key={certificate.code} />
          })}
       </ul>
-      <header className='mt-16 mb-8 text-center'>
-        <h2 className='text-3xl font-bold text-center'>Mis cursos en progreso</h2>
-      </header>
-      <ul className='education-list'>
-        {data.educationJson.data.courses.map(course => {
-           return <Course data={course} key={course.code} />
-         })}
-      </ul>
     </div>
   )
 }
