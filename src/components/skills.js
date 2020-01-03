@@ -1,6 +1,7 @@
 import React from 'react'
 import Bar from './charts/bar'
 import Colors from '../helpers/colors'
+import Translate from '../utils/translate'
 
 export default (props) => {
   const barData = require('../data/skills/programming').default
@@ -9,8 +10,8 @@ export default (props) => {
 
   return (
     <div className='max-w-4xl mx-auto mt-20'>
-      <h2 id='skills' className='text-4xl font-bold text-center text-gray-800'>Skills</h2>
-      <h2 id='skills' className='text-xl font-light text-center text-gray-700 mt-20'>Programming Languages</h2>
+      <h2 id='skills' className='text-4xl font-bold text-center text-gray-800'>{Translate(props.codeLanguage, 'skills')}</h2>
+      <h2 id='skills' className='text-xl font-light text-center text-gray-700 mt-20'>{Translate(props.codeLanguage, 'programmingLang')}</h2>
       <div
         className='max-w-4xl mx-auto md:hidden'
         data-sal='fade'

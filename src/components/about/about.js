@@ -1,5 +1,6 @@
 import React from 'react'
 import CardAbout from './cardAbout'
+import Translate from '../../utils/translate'
 
 export default (props) => {
   return (
@@ -19,7 +20,7 @@ export default (props) => {
       <p className='hidden xl:block'>
         XL
       </p>
-      <h2 id='about' className='text-4xl font-bold text-center text-gray-800'>About Me</h2>
+      <h2 id='about' className='text-4xl font-bold text-center text-gray-800'>{Translate(props.codeLanguage, 'about')}</h2>
       <div className='flex inline-block justify-center md:mt-20'>
         <div className='rounded overflow-hidden shadow-lg hidden md:block' style={{height: '420px', width: '285px'}}
              data-sal='slide-right'
@@ -35,33 +36,33 @@ export default (props) => {
              data-sal='slide-left'
              data-sal-delay='300'
              data-sal-easing='easeInSine'>
-          <h3 className='text-2xl font-bold text-center text-gray-700'>Hi, I’m Hanzel Godinez.</h3>
-          <h3 className='text-2xl font-bold text-center text-gray-700'>Nice to meet you.</h3>
+          <h3 className='text-2xl font-bold text-center text-gray-700'>{Translate(props.codeLanguage, 'introduce_h1')}</h3>
+          <h3 className='text-2xl font-bold text-center text-gray-700'>{Translate(props.codeLanguage, 'introduce_h2')}</h3>
 
           <div className='text-base font-light text-center text-gray-700 mt-5 hidden md:block'>
-            <p >Soy un desarrollador de software apasionado por lo que hace,</p>
-            <p>que a su vez ama la tecnología, la lectura y el continuo</p>
-            <p>aprendizaje de nuevas cosas, tengo una experiencia</p>
-            <p>profesional de 12 años, en los cuales he tenido la</p>
-            <p>oportunidad participar en cosas bastante intereses, en roles</p>
-            <p>como desarrollador de software, arquitecto o líder de equipo,</p>
-            <p>lo cual me ha permitido aprender muchísimo de los demás y</p>
-            <p>compartir muchos conocimientos.</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p1')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p2')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p3')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p4')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p5')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p6')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p7')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_p8')}</p>
           </div>
 
           <div className='text-base font-light text-start text-gray-700 ml-3 mt-5 block md:hidden'>
-            <p>Soy un desarrollador de software</p>
-            <p>apasionado por lo que hace, que </p>
-            <p>que a su vez ama la tecnología, la</p>
-            <p>lectura y el continuo aprendizaje de</p>
-            <p>nuevas cosas, tengo una experiencia</p>
-            <p>profesional de 12 años, en los cuales</p>
-            <p>he tenido la oportunidad participar en</p>
-            <p>cosas bastante intereses, en roles como</p>
-            <p>desarrollador de software, arquitecto o</p>
-            <p>líder de equipo, lo cual me ha permitido</p>
-            <p>aprender muchísimo de los demás y</p>
-            <p>compartir muchos conocimientos.</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm1')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm2')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm3')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm4')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm5')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm6')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm7')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm8')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm9')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm10')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm11')}</p>
+            <p>{Translate(props.codeLanguage, 'introduce_pm12')}</p>
           </div>
         </div>
       </div>
