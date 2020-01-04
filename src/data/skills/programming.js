@@ -1,113 +1,4 @@
-import Translate from '../../utils/translate'
-
-const withLetters = () => [
-    {
-        name: 'A',
-        value: 0.08167,
-    },
-    {
-        name: 'B',
-        value: 0.01492,
-    },
-    {
-        name: 'C',
-        value: 0.02782,
-    },
-    {
-        name: 'D',
-        value: 0.04253,
-    },
-    {
-        name: 'E',
-        value: 0.12702,
-    },
-    {
-        name: 'F',
-        value: 0.02288,
-    },
-    {
-        name: 'G',
-        value: 0.02015,
-    },
-    {
-        name: 'H',
-        value: 0.06094,
-    },
-    {
-        name: 'I',
-        value: 0.06966,
-    },
-    {
-        name: 'J',
-        value: 0.00153,
-    },
-    {
-        name: 'K',
-        value: 0.00772,
-    },
-    {
-        name: 'L',
-        value: 0.04025,
-    },
-    {
-        name: 'M',
-        value: 0.02406,
-    },
-    {
-        name: 'N',
-        value: 0.06749,
-    },
-    {
-        name: 'O',
-        value: 0.07507,
-    },
-    {
-        name: 'P',
-        value: 0.01929,
-    },
-    {
-        name: 'Q',
-        value: 0.00095,
-    },
-    {
-        name: 'R',
-        value: 0.05987,
-    },
-    {
-        name: 'S',
-        value: 0.06327,
-    },
-    {
-        name: 'T',
-        value: 0.09056,
-    },
-    {
-        name: 'U',
-        value: 0.02758,
-    },
-    {
-        name: 'V',
-        value: 0.00978,
-    },
-    {
-        name: 'W',
-        value: 0.0236,
-    },
-    {
-        name: 'X',
-        value: 0.0015,
-    },
-    {
-        name: 'Y',
-        value: 0.01974,
-    },
-    {
-        name: 'Z',
-        value: 0.00074,
-    },
-];
-
-const programmingLanguages = (codeLanguage) => [
+const programmingLanguages = () => [
     {
         name: 'SQL',
         value: 0.9,
@@ -150,7 +41,122 @@ const programmingLanguages = (codeLanguage) => [
     },
 ];
 
+const webFrameworks = () => [
+    {
+        name: 'ReactJS',
+        value: 0.65,
+    },
+    {
+        name: 'Gatsby',
+        value: 0.9,
+    },
+    {
+        name: 'Express',
+        value: 0.7,
+    },
+    {
+        name: 'Django',
+        value: 0.85,
+    },
+    {
+        name: 'Flask',
+        value: 0.80,
+    },
+    {
+        name: 'NodeJS',
+        value: 0.7,
+    },
+];
+
+const databases = () => [
+    {
+        name: 'Oracle',
+        value: 0.9,
+    },
+    {
+        name: 'MySQL',
+        value: 0.8,
+    },
+    {
+        name: 'PostgreSQL',
+        value: 0.8,
+    },
+    {
+        name: 'SQLite',
+        value: 0.65,
+    },
+    {
+        name: 'MongoDB',
+        value: 0.7,
+    },
+    {
+        name: 'SQL Server',
+        value: 0.7,
+    },
+];
+
+const platforms = () => [
+    {
+        name: 'Linux',
+        value: 0.75,
+    },
+    {
+        name: 'Windows',
+        value: 0.9,
+    },
+    {
+        name: 'macOS',
+        value: 0.9,
+    },
+    {
+        name: 'Docker',
+        value: 0.8,
+    },
+    {
+        name: 'GCP',
+        value: 0.4,
+    },
+    {
+        name: 'Arduino',
+        value: 0.7,
+    },
+    {
+        name: 'Heroku',
+        value: 0.4,
+    },
+    {
+        name: 'Firebase',
+        value: 0.7,
+    },
+];
+
+const devTools = () => [
+    {
+        name: 'VSCode',
+        value: 0.90,
+    },
+    {
+        name: 'Atom',
+        value: 0.7,
+    },
+    {
+        name: 'Git',
+        value: 0.9,
+    },
+    {
+        name: 'GitHub',
+        value: 0.85,
+    },
+    {
+        name: 'GitLab',
+        value: 0.8,
+    },
+];
+
 export default {
-    withLetters,
     programmingLanguages,
+    webFrameworks,
+    databases,
+    platforms,
+    devTools
 };

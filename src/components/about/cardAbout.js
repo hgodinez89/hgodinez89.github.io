@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Translate from '../../utils/translate'
+import React from 'react'
 import profileDay from '../../imgs/profileDay.jpg'
 import profileNight from '../../imgs/profileNight.jpg'
 
@@ -18,7 +17,7 @@ export default (props) => {
         id={props.idImg}
         style={{height: props.height, width: props.width}}
         src={profileDay}
-        alt='Hanzel Photo' />
+        alt='Hanzel Godinez' />
       <div className='flex inline-block justify-end px-4 py-3'>
         <svg
           xmlns='http://www.w3.org/2000/svg'

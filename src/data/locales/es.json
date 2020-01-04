@@ -33,5 +33,9 @@
   "introduce_pm11": "aprender muchísimo de los demás y",
   "introduce_pm12": "compartir muchos conocimientos.",
   "skills": "Habilidades",
-  "programmingLang": "Lenguajes de Programación"
+  "programmingLang": "Lenguajes de Programación",
+  "webFrameworks": "Frameworks Web",
+  "databases": "Bases de Datos",
+  "platforms": "Plataformas",
+  "devTools": "Herramientas de Desarrollo"
 }

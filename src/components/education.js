@@ -1,7 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Certificate from './certificate'
-import Course from './course'
 
 export default (props) => {
   const data = useStaticQuery(graphql`{
