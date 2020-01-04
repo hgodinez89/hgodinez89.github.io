@@ -32,7 +32,7 @@ export default (props) => {
             height='380px'
             width='285px' />
         </div>
-        <div className='ml-0 mt-12 md:ml-10 lg:ml-20'
+        <div className='ml-0 mt-12 md:ml-6 lg:ml-20'
              data-sal='slide-left'
              data-sal-delay='300'
              data-sal-easing='easeInSine'>
@@ -50,7 +50,7 @@ export default (props) => {
             <p>{Translate(props.codeLanguage, 'introduce_p8')}</p>
           </div>
 
-          <div className='text-base font-light text-start text-gray-700 ml-3 mt-5 block md:hidden'>
+          <div className='text-base font-light text-center text-gray-700 ml-3 mt-5 block md:hidden'>
             <p>{Translate(props.codeLanguage, 'introduce_pm1')}</p>
             <p>{Translate(props.codeLanguage, 'introduce_pm2')}</p>
             <p>{Translate(props.codeLanguage, 'introduce_pm3')}</p>

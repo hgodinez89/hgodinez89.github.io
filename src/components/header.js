@@ -33,7 +33,7 @@ export default (props) => {
               </a>
               <a href='#skills' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 mr-4'> {Translate(props.codeLanguage, 'skills_mn')}
               </a>
-              <a href='' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500'> {Translate(props.codeLanguage, 'portfolio_mn')}
+              <a href='#porfolio' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500'> {Translate(props.codeLanguage, 'portfolio_mn')}
               </a>
             </div>
             <div>

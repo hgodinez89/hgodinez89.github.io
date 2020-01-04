@@ -1,13 +1,17 @@
 import React from 'react'
 import optimizedResize from './optimizedResize.js'
 
+function getWidth () {
+  return window.innerWidth
+}
+
 export default function(Component) {
   return class WithResponsiveness extends React.PureComponent {
     constructor (props) {
       super(props)
 
       this.state = {
-        width: 500
+        width: getWidth() ? getWidth() : 500
       }
 
       this._setRef = this._setRef.bind(this)
