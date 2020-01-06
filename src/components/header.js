@@ -8,6 +8,10 @@ export default (props) => {
   const [isExpanded, toggleExpansion] = useState(false)
   const languages = require('../data/languages');
 
+  if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
       <header className='bg-black' style={{height: '100vh', backgroundSize: 'cover', backgroundImage: `url(${unsplash})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundAttachment: 'fixed'}}>
         <nav className='flex items-center justify-between flex-wrap p-6'>
@@ -29,12 +33,12 @@ export default (props) => {
           </div>
           <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
             <div className='text-sm lg:flex-grow'>
-              <a href='#about' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 mr-4'> {Translate(props.codeLanguage, 'about_mn')}
-              </a>
-              <a href='#skills' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 mr-4'> {Translate(props.codeLanguage, 'skills_mn')}
-              </a>
-              <a href='#porfolio' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500'> {Translate(props.codeLanguage, 'portfolio_mn')}
-              </a>
+              <Link to='/#about' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 mr-4'> {Translate(props.codeLanguage, 'about_mn')}
+              </Link>
+              <Link to='/#skills' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500 mr-4'> {Translate(props.codeLanguage, 'skills_mn')}
+              </Link>
+              <Link to='/#porfolio' className='block ml-5 mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-500'> {Translate(props.codeLanguage, 'portfolio_mn')}
+              </Link>
             </div>
             <div>
               <Link to={props.codeLanguage === languages.defaultLangKey ? '/es' : '/'} className='flex inline-block text-sm px-4 py-2 leading-none text-white border-none hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded mt-2 lg:border-solid border-white border rounded mt-0'>

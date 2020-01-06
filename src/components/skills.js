@@ -70,7 +70,7 @@ export default (props) => {
   const withResponsiveness = require('../helpers/withResponsiveness').default
   const ResponsiveBarChart = withResponsiveness(Bar)
 
-  if (props.codeLanguage != previousCodeLanguage) {
+  if (props.codeLanguage !== previousCodeLanguage) {
     currentIndexGraph = 1
     previousIndexGraph = null
     countMaxGraph = 5
