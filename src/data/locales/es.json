@@ -38,5 +38,7 @@
   "databases": "Bases de Datos",
   "platforms": "Plataformas",
   "devTools": "Herramientas de Desarrollo",
-  "portfolio": "Portafolio"
+  "portfolio": "Portafolio",
+  "page_not_found": "Oops. La página que estas buscando no existe.",
+  "back_home": "Volver al Inicio"
 }
