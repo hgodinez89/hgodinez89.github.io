@@ -4,10 +4,12 @@ import Education from '../components/education'
 import About from '../components/about/about'
 import Skills from '../components/skills'
 import Portfolio from '../components/portfolio'
+import SEO from '../components/seo'
 
 const codeLanguage = require('../data/languages')
 
 export default () => <div>
+                       <SEO/>
                        <Header codeLanguage={codeLanguage.langs[0]} />
                        <About codeLanguage={codeLanguage.langs[0]} />
                        <Skills codeLanguage={codeLanguage.langs[0]} />
