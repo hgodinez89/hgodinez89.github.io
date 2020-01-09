@@ -1,0 +1,22 @@
+{
+    "color_1": [
+        "bg-orange-500",
+        "text-orange-500"
+    ],
+    "color_2": [
+        "bg-teal-500",
+        "text-teal-500"
+    ],
+    "color_3": [
+        "bg-purple-500",
+        "text-purple-500"
+    ],
+    "color_4": [
+        "bg-yellow-500",
+        "text-yellow-500"
+    ],
+    "color_5": [
+        "bg-green-500",
+        "text-green-500"
+    ]
+}
