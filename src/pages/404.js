@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Img404 from '../imgs/404.png'
+import Img404 from '../imgs/404.jpg'
 import Translate from '../utils/translate'
 
 export default (props) => {

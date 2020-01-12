@@ -74,7 +74,7 @@ module.exports = {
     description: "Hanzel's portfolio a software developer",
     url: 'https://hanzelgodinez.dev', // No trailing slash allowed!
     siteUrl: 'https://hanzelgodinez.dev', // No trailing slash allowed!
-    image: '/src/imgs/avatar.png', // Path to your image you placed in the 'static' folder
+    image: '/src/imgs/avatar.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@GodinezHanzel',
     author: 'Hanzel Godinez',
     keywords: 'Software Developer, Desarrollador de Software, Ingeniero en Sistemas, System Engineer',

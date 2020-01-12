@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Alert from '../alert'
-import imgAvatar from '../../imgs/avatar.png'
+import imgAvatar from '../../imgs/avatar.jpg'
 import Translate from '../../utils/translate'
 import EmailJS from 'emailjs-com';
 
