@@ -1,8 +1,10 @@
 import React from 'react'
 import optimizedResize from './optimizedResize.js'
 
+const windowGlobal = typeof window !== 'undefined' && window
+
 function getWidth () {
-  return window.innerWidth
+  return windowGlobal.innerWidth
 }
 
 export default function(Component) {

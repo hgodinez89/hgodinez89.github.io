@@ -49,9 +49,12 @@ export default (props) => {
           <div className='flex'>
             <div className='flex-1'>
               <h1 className='font-bold text-white sm:font-bold text-white text-4xl flex justify-center md:text-5xl lg:text-6xl xl:text-6xl'>{Translate(props.codeLanguage, 'greeting')}</h1>
+              <div className='flex inline-block'>
               <p className='text-white sm:text-white text-xs font-normal flex justify-center md:text-sm font-normal lg:text-lg font-normal xl:text-lg font-normal'>
-              {Translate(props.codeLanguage, 'description_1')}<p className='hidden md:block'>&nbsp;{Translate(props.codeLanguage, 'description_2')}</p>
+                {Translate(props.codeLanguage, 'description_1')}
               </p>
+              <p className='text-white sm:text-white text-xs font-normal flex justify-center md:text-sm font-normal lg:text-lg font-normal xl:text-lg font-normal hidden md:block'>&nbsp;{Translate(props.codeLanguage, 'description_2')}</p>
+              </div>
               <p className='text-white text-xs font-normal flex justify-center md:hidden'>
                 {Translate(props.codeLanguage, 'description_2')}
               </p>

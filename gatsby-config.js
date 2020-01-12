@@ -56,84 +56,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        // graphQL query to get siteMetadata 
-        query: ` 
-        { 
-          site { 
-            siteMetadata { 
-              title 
-              description 
-              url  
-              author 
-            }
-          }
-        } 
-      `,
-        feeds: [
-          // an array of feeds, I just have one below
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              const { siteMetadata : { siteUrl } } = site
-              return allMarkdownRemark.edges.map(edge => {
-                const {node: {frontmatter: {title, date, path, author: { name, email }, featured: { publicURL }, featuredAlt}, excerpt, html}} = edge
-                return Object.assign({}, edge.node.frontmatter, {
-                  language: `en-us`,
-                  title,
-                  description: excerpt,
-                  date,
-                  url: url + path,
-                  guid: url + path,
-                  author: `${email} ( ${name} )`,
-                  image: {
-                    url: url + publicURL,
-                    title: featuredAlt,
-                    link: url + path
-                  },
-                  custom_elements: [{ 'content:encoded': html }]
-                })
-              })
-            },
-            // query to get blog post data 
-            query: ` 
-            { 
-              allMarkdownRemark(  
-                sort: { order: DESC, fields: [frontmatter___date] }, 
-              ) { 
-                edges { 
-                  node { 
-                    excerpt 
-                    html 
-                    frontmatter { 
-                      path 
-                      date 
-                      title 
-                      featured { publicURL } 
-                      featuredAlt 
-                      author { 
-                        name 
-                        email 
-                      } 
-                    } 
-                  } 
-                } 
-              } 
-            } 
-          `,
-            output: '/rss.xml',
-            title: `Hanzel Godinez | RSS Feed`
-          }
-        ]
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-155736344-1'
@@ -151,6 +73,7 @@ module.exports = {
     titleTemplate: 'Hanzel | Software Developer',
     description: "Hanzel's portfolio a software developer",
     url: 'https://hanzelgodinez.dev', // No trailing slash allowed!
+    siteUrl: 'https://hanzelgodinez.dev', // No trailing slash allowed!
     image: '/src/imgs/avatar.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@GodinezHanzel',
     author: 'Hanzel Godinez',

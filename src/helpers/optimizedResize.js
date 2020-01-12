@@ -1,9 +1,11 @@
+const windowGlobal = typeof window !== 'undefined' && window
+
 const optimizedResize = (function () {
   const callbacks = []
 
   let running = false
 
-  let cachedWidth = window.innerWidth
+  let cachedWidth = windowGlobal.innerWidth
   const delay = 66
 
   // run the actual callbacks
@@ -22,8 +24,8 @@ const optimizedResize = (function () {
     if (!running) {
       running = true
 
-      if (window.requestAnimationFrame) {
-        window.requestAnimationFrame(runCallbacks)
+      if (windowGlobal.requestAnimationFrame) {
+        windowGlobal.requestAnimationFrame(runCallbacks)
       } else {
         setTimeout(runCallbacks, delay)
       }
@@ -31,7 +33,7 @@ const optimizedResize = (function () {
   }
 
   const resizeHorizontal = () => {
-    const newWidth = window.innerWidth
+    const newWidth = windowGlobal.innerWidth
 
     if (cachedWidth !== newWidth) {
       cachedWidth = newWidth
@@ -39,8 +41,8 @@ const optimizedResize = (function () {
       if (!running) {
         running = true
 
-        if (window.requestAnimationFrame) {
-          window.requestAnimationFrame(runCallbacks)
+        if (windowGlobal.requestAnimationFrame) {
+          windowGlobal.requestAnimationFrame(runCallbacks)
         } else {
           setTimeout(runCallbacks, delay)
         }
@@ -60,19 +62,19 @@ const optimizedResize = (function () {
     // public method to add additional callback
     add(callback) {
       if (!callbacks.length) {
-        window.addEventListener('resize', resize)
+        windowGlobal.addEventListener('resize', resize)
       }
       addCallback(callback)
     },
     addHorizontal(callback) {
       if (!callbacks.length) {
-        window.addEventListener('resize', resizeHorizontal)
+        windowGlobal.addEventListener('resize', resizeHorizontal)
       }
       addCallback(callback)
     },
     clearAll() {
-      window.removeEventListener('resize', resize)
-      window.removeEventListener('resize', resizeHorizontal)
+      windowGlobal.removeEventListener('resize', resize)
+      windowGlobal.removeEventListener('resize', resizeHorizontal)
     }
   }
 })()
