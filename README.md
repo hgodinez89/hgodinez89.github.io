@@ -1,97 +1,73 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://hanzelgodinez.dev/">
+    <img src="https://res.cloudinary.com/developerteam/image/upload/v1578798463/PortfolioWeb/favicon_wc1uzv.png" alt="Logo" width=180 height=180>
   </a>
+
+  <h3 align="center">Hanzel Godinez</h3>
+
+  <p align="center">
+    This is my portfolio website, I hope you like it.
+    <br>
+    <a href="https://github.com/hgodinez89/hgodinez89.github.io/issues/new">Report bug</a>
+  </p>
 </p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## What’s In This Document
 
-## 🚀 Quick start
+- [Who I am?](#who-i-am)
+- [What is this?](#what-is-this)
+- [Version History](#version-history)
+- [Preview](#preview)
+- [Have questions?](#have-questions)
+- [Thanks](#thanks)
 
-1.  **Create a Gatsby site.**
+## Who I am?
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://hanzelgodinez.dev">
+         <img src="https://avatars1.githubusercontent.com/u/14959862?s=400&u=90bf1dc4cc8b202ef3a35a16999e163deda9e2f9&v=4" width="100px;" alt="Hanzel Godinez"/><br />
+         <sub><b>Hanzel Godinez</b></sub>
+      </a>
+      <br />
+      &lt;/ 💻 &gt;
+    </td>
+  </tr>
+</table>
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+I am a software developer passionate about what he does, which in turn loves technology, reading and continuous learning 
+of new things. I have a professional experience of 12 years, in this years I have had the opportunity to participate in 
+quite interesting things, in positions as software developers, architect or team leader, in this positions I have able to
+learn a lot from others persons and share a lot of knowledge.
 
-1.  **Start developing.**
+## What is this?
 
-    Navigate into your new site’s directory and start it up.
+This my personal website, you could enter in the url <a href="https://hanzelgodinez.dev">https://hanzelgodinez.dev</a> and 
+you will find information about me and my work. It was create with HTML, CSS, JavaScript and GatsbyJS. </br> </br>
+Thanks for your visiting! 👍
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+## Version History
 
-1.  **Open the source code and start editing!**
+| Version |       Date         |             Comments             |
+| ------- | ------------------ | -------------------------------- |
+| 1.0     | January 2020       | Initial release                  |
 
-    Your site is now running at `http://localhost:8000`!
+## Preview
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+![Home](https://res.cloudinary.com/developerteam/image/upload/v1578799071/PortfolioWeb/home_vtk0j0.png)
+![About](https://res.cloudinary.com/developerteam/image/upload/v1578801783/PortfolioWeb/about_a2vwfz.png) 
+![Skills](https://res.cloudinary.com/developerteam/image/upload/v1578799483/PortfolioWeb/skills_xmzdxg.png) 
+![Portfolio](https://res.cloudinary.com/developerteam/image/upload/v1578799064/PortfolioWeb/portfolio_k5g8cr.png)
+![Contact](https://res.cloudinary.com/developerteam/image/upload/v1578799061/PortfolioWeb/contact_sjotud.png)
+![Footer](https://res.cloudinary.com/developerteam/image/upload/v1578799059/PortfolioWeb/footer_kinjbk.png)
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## Have questions?
 
-## 🧐 What's inside?
+If you have questions or just need any help, feel free to write me 
+<a href="mailto:hgodinez89@hotmail.com">hgodinez89@hotmail.com</a>
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## Thanks
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+💜 Thanks to Github (Github Pages) for hosting my website.
