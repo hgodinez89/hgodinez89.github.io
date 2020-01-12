@@ -49,6 +49,9 @@ setInterval(
 export default (props) => {
   phrasesJson = require(`../../data/locales/phrases_${props.codeLanguage}.json`)
 
+  // Clean the array when load the page or change language
+  phraseArray = []
+
   return (
     <div className='max-w-full bg-gray-900'>
       <div className='flex justify-center'>

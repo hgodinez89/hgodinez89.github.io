@@ -170,13 +170,22 @@ body{
 }
 
 .socialIcon {
-  /* fill: #2c5282; */
   fill: #2b6cb0;
   margin: 0 10px;
 }
 
 .socialIcon:hover {
   fill: #f7fafc;
+}
+
+.ohnohoney{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
 
 @-webkit-keyframes fade {

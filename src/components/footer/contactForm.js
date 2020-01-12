@@ -9,6 +9,7 @@ export default (props) => {
   const [name, setName] = useState([]);
   const [email, setEmail] = useState([]);
   const [message, setMessage] = useState([]);
+  const [phone, setPhone] = useState([]);
   const secrets = require('../../config/secrets')
 
   var sendProgress = false
@@ -57,12 +58,20 @@ export default (props) => {
     } else if (name === 'message') {
       setMessage(value)
       valMessage(value)
-    } 
+    } else if (name === 'phone') {
+      setPhone(value)
+    }
     
   }
 
   const handleSubmit = event => {
     event.preventDefault()
+
+    // Security Validation
+    if (phone.length > 0) {
+      return ''
+    }
+    
     if (valName(name) && valEmail(email) && valMessage(message)) {
       if (!sendProgress) {
         sendProgress = true
@@ -195,6 +204,17 @@ export default (props) => {
                 onChange={handleInputChange} />
               <p id='messageFormErr' className='text-xs italic text-red-500 mt-1 ml-1' />
             </div>
+
+            <label className='ohnohoney' htmlFor='phone'>
+            </label>
+            <textarea
+              className='ohnohoney'
+              name='phone'
+              type='text'
+              placeholder='Phone Number'
+              value={phone}
+              onChange={handleInputChange} />
+
             <div className='mb-3 text-center'>
               <button className='w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-20 rounded' type='submit'>
                 <i id='loading'></i>&nbsp;{Translate(props.codeLanguage, 'send_label')}
