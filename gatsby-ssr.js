@@ -4,4 +4,7 @@ exports.onRenderBody = ({setHeadComponents, setPreBodyComponents, setPostBodyCom
   setHeadComponents([
     <link key='1' rel="stylesheet" href="https://cdn.jsdelivr.net/npm/britecharts/dist/css/britecharts.min.css" type="text/css" />
   ])
+  setHeadComponents([
+    <link key='2' rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  ])
 }

@@ -8,46 +8,6 @@ body{
     @apply bg-gray-100;
 }
 
-/* It creates a selector for buttons */
-.btn{
-    @apply bg-purple-500 text-white font-bold rounded border-purple-700 py-2 px-4 border-b-4;
-}
-
-.repos-list{
-    columns: 3;
-    -moz-columns: 3;
-    column-rule: 1px solid;
-    @apply p-4;
-}
-
-.repos-list li{
-    break-inside: avoid-column;
-}
-
-.education-list{
-    columns: 3;
-    -moz-columns: 3;
-}
-
-.education-list li{
-    break-inside: avoid-column;
-}
-
-.medium-list{
-    columns: 2;
-    -moz-columns: 2;
-}
-
-.medium-list li{
-    break-inside: avoid-column;
-}
-
-.vertical-text{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    @apply bg-blue-200 text-purple-700 text-xs p-2 inline-block;
-}
-
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -178,7 +138,7 @@ body{
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -197,6 +157,28 @@ body{
   animation-duration: 1.5s;
 }
 
+.svgContact {
+  fill: #edf2f7;
+}
+
+.svgTop {
+  fill: white;
+}
+
+.phraseAnimation {
+  transition: opacity 3000ms;
+}
+
+.socialIcon {
+  /* fill: #2c5282; */
+  fill: #2b6cb0;
+  margin: 0 10px;
+}
+
+.socialIcon:hover {
+  fill: #f7fafc;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -206,8 +188,3 @@ body{
   from {opacity: .4}
   to {opacity: 1}
 }
-
-/* ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; 
-}  */

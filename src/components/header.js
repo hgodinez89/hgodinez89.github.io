@@ -10,7 +10,7 @@ export default (props) => {
   const languages = require('../data/languages');
 
   return (
-      <header className='bg-black' style={{height: '100vh', backgroundSize: 'cover', backgroundImage: `url(${unsplash})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundAttachment: 'fixed'}}>
+      <header id='top' className='bg-black' style={{height: '100vh', backgroundSize: 'cover', backgroundImage: `url(${unsplash})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundAttachment: 'fixed'}}>
         <nav className='flex items-center justify-between flex-wrap p-6'>
           <div className='flex items-center flex-shrink-0 text-white mr-6'>
             <Link to={props.codeLanguage === languages.defaultLangKey ? '/' : '/es'} className='flex inline-block'>
@@ -56,12 +56,12 @@ export default (props) => {
                 {Translate(props.codeLanguage, 'description_2')}
               </p>
               <div className='container mx-auto px-32 md:hidden'>
-                <button className="bg-blue-500 mt-5 hover:bg-blue-700 text-white font-normal text-xs py-2 px-12 rounded">
+                <button onClick={() => scrollTo('#contact')} className="bg-blue-500 mt-5 hover:bg-blue-700 text-white font-normal text-xs py-2 px-12 rounded">
                 {Translate(props.codeLanguage, 'contact_1')}
                 </button>
               </div>
               <div className='container mx-auto px-32 hidden md:block'>
-                <button className="bg-blue-500 mt-6 hover:bg-blue-700 text-white font-bold py-2 px-20 rounded">
+                <button onClick={() => scrollTo('#contact')} className="bg-blue-500 mt-6 hover:bg-blue-700 text-white font-bold py-2 px-20 rounded">
                   {Translate(props.codeLanguage, 'contact_2')}
                 </button>
               </div>

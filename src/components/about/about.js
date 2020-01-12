@@ -5,7 +5,7 @@ import Translate from '../../utils/translate'
 export default (props) => {
   return (
     <div className='max-w-4xl mx-auto mt-20'>
-      <p className='hidden xs:block'>
+      {/* <p className='hidden xs:block'>
         XS
       </p>
       <p className='hidden sm:block'>
@@ -19,7 +19,7 @@ export default (props) => {
       </p>
       <p className='hidden xl:block'>
         XL
-      </p>
+      </p> */}
       <h2 id='about' className='text-4xl font-bold text-center text-gray-800'>{Translate(props.codeLanguage, 'about')}</h2>
       <div className='flex inline-block justify-center md:mt-20'>
         <div className='rounded overflow-hidden shadow-lg hidden md:block' style={{height: '420px', width: '285px'}}
