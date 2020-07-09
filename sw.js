@@ -67,6 +67,10 @@ self.__precacheManifest = [
     "revision": "11764372a8e237bd271021885ab9aaf6"
   },
   {
+    "url": "CNAME",
+    "revision": "08ad3a0c695714811439a2c3e362b606"
+  },
+  {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-7c31e2436cade51cbcda.js"
   },
   {
@@ -191,10 +195,6 @@ self.__precacheManifest = [
   {
     "url": "robots.txt",
     "revision": "50d8a018e8ae96732c8a2ba663c61d4e"
-  },
-  {
-    "url": "sitemap.xml",
-    "revision": "9ed27cb088b7017f27a3a5127ba39c57"
   },
   {
     "url": "static/404-916debddee48c69224fb6d423f1ae132.jpg"
