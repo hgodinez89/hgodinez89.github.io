@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{aCzW:function(e,n,t){"use strict";t.r(n);var r=t("q1tI"),i=t.n(r),o=!1;n.default=function(){var e,n,t;return o||(e=window.navigator.userAgent,n=e.indexOf("MSIE "),t=e.indexOf("Trident/"),(n>0||t>0)&&alert("Sorry! This website does not work with any version of Internet Explorer browser."),o=!0),i.a.createElement("div",{style:{width:"0px",height:"0px"}})}}}]);
-//# sourceMappingURL=9-57182000af9fd4714364.js.map
