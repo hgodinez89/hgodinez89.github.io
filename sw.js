@@ -74,9 +74,6 @@ self.__precacheManifest = [
     "revision": "e2ee95147a95ae79a46653ac85327385"
   },
   {
-    "url": "CNAME"
-  },
-  {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-e5cb9e0c77a823b86dc2.js"
   },
   {
