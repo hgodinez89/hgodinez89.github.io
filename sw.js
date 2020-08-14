@@ -35,11 +35,11 @@ self.__precacheManifest = [
   },
   {
     "url": "404.html",
-    "revision": "b77f560756b24114b48b8fef861d2764"
+    "revision": "5cec9a601e0cb2986dce82342a3b4e01"
   },
   {
     "url": "404/index.html",
-    "revision": "60c270ab70b754bb39a92bb3f0fa07ff"
+    "revision": "9e912bf10f5b1c13e5a19454c3267152"
   },
   {
     "url": "4b8909ecb8821892ee8b820c955d702bb7be4976-165b953b4095e9389534.js"
@@ -74,6 +74,10 @@ self.__precacheManifest = [
     "revision": "e2ee95147a95ae79a46653ac85327385"
   },
   {
+    "url": "CNAME",
+    "revision": "08ad3a0c695714811439a2c3e362b606"
+  },
+  {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-e5cb9e0c77a823b86dc2.js"
   },
   {
@@ -103,11 +107,11 @@ self.__precacheManifest = [
   },
   {
     "url": "es/index.html",
-    "revision": "b6bf61619245d44550fb593ebd08aa78"
+    "revision": "502b5515bcdbc4e4c840bbfe46f0fe94"
   },
   {
     "url": "favicon-32x32.png",
-    "revision": "772422877f7d3b22c841218597d5580c"
+    "revision": "f7dd29f78c891ab45fab51f9e9ababab"
   },
   {
     "url": "framework-93d3a746c3cf42acdafc.js"
@@ -118,42 +122,42 @@ self.__precacheManifest = [
   },
   {
     "url": "icons/icon-144x144.png",
-    "revision": "ca0a868c68d272a9775efdeb00d32a7c"
+    "revision": "db31d7978d2428b41e50ebcaeb3c99db"
   },
   {
     "url": "icons/icon-192x192.png",
-    "revision": "520cf5efc5b378cfc59b8bd5be657a7b"
+    "revision": "b9599158d421a05143b343dfd5922e8a"
   },
   {
     "url": "icons/icon-256x256.png",
-    "revision": "42af6b8d4dc0384bf15b074d81c7687b"
+    "revision": "04a4a24a983dd044a20bd1fed2c21089"
   },
   {
     "url": "icons/icon-384x384.png",
-    "revision": "fc18b172aa4b005d178f82b4b344fa44"
+    "revision": "347ea4036581ce591cbe22d04f7ee773"
   },
   {
     "url": "icons/icon-48x48.png",
-    "revision": "bbc0e100923188094fa54017ba3cd530"
+    "revision": "63ee50b1fba95503b270d4401b8e5c10"
   },
   {
     "url": "icons/icon-512x512.png",
-    "revision": "e02c9642d875da03c4641fe3928000c5"
+    "revision": "bc3437893fb6b9dd172c39bf79d2218d"
   },
   {
     "url": "icons/icon-72x72.png",
-    "revision": "f72fb02a81e0463387234aa74ada1d63"
+    "revision": "c7f22ad166430daaab4d4414542d9432"
   },
   {
     "url": "icons/icon-96x96.png",
-    "revision": "298eac110d772671d66aa29c686c4830"
+    "revision": "390749662c4d5f3dbba40a0302e90201"
   },
   {
     "url": "idb-keyval-3.2.0-iife.min.js"
   },
   {
     "url": "index.html",
-    "revision": "3296252307b11fd75ced8238fcce1274"
+    "revision": "a17fbd079d2cecf88a1afbc229a5a846"
   },
   {
     "url": "manifest.webmanifest",
@@ -161,7 +165,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "d2e9d15abf4d3304d8eec4e3da5acbb4"
+    "revision": "c61b4e7e68a6ad30122776e9af00050e"
   },
   {
     "url": "page-data/404.html/page-data.json",
@@ -173,7 +177,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "082c1aa2e4808ccc5c9b8c943d7afa01"
+    "revision": "ef6cc26b29ed4c37042e7a3ed7405a39"
   },
   {
     "url": "page-data/dev-404-page/page-data.json",
@@ -198,10 +202,6 @@ self.__precacheManifest = [
   {
     "url": "robots.txt",
     "revision": "50d8a018e8ae96732c8a2ba663c61d4e"
-  },
-  {
-    "url": "sitemap.xml",
-    "revision": "9ed27cb088b7017f27a3a5127ba39c57"
   },
   {
     "url": "static/2ce074d716233f540e0847d247c7d5d6/3b304/avatar.jpg"
@@ -259,7 +259,7 @@ self.__precacheManifest = [
     "revision": "aca5b7feab278569bad07d62a5da3185"
   },
   {
-    "url": "styles.202d344478f88bcf8ef1.css"
+    "url": "styles.a48100599f9322fd28d1.css"
   },
   {
     "url": "webpack-runtime-c4b38542391d68b8509a.js"
@@ -270,13 +270,9 @@ self.__precacheManifest = [
   },
   {
     "url": "webpack.stats.json",
-    "revision": "37907fd987f8db27ab9f5b0dee9ff2f0"
+    "revision": "058417a0b7d97ab2b2c9eb3506dd6f62"
   }
 ].concat(self.__precacheManifest || []);
-
-// Adding by Hanzel
-self.__precacheManifest = self.__precacheManifest.map((el) => ({ ...el, 'url': `./${el.url}` }));
-
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
@@ -367,9 +363,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  
-  // Ajusts by Hanzel
-  if (!resources || !(await caches.match(`./app-ed9ef136ac2a16c13a7e.js`))) {
+  if (!resources || !(await caches.match(`/app-ed9ef136ac2a16c13a7e.js`))) {
     return await fetch(event.request)
   }
 
@@ -382,8 +376,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  // Ajusts by Hanzel
-  const offlineShell = `./offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
