@@ -88,10 +88,6 @@ self.__precacheManifest = [
     "revision": "e2ee95147a95ae79a46653ac85327385"
   },
   {
-    "url": "CNAME",
-    "revision": "08ad3a0c695714811439a2c3e362b606"
-  },
-  {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-e5cb9e0c77a823b86dc2.js"
   },
   {
@@ -321,6 +317,10 @@ self.__precacheManifest = [
     "revision": "722f51f3c3fe08dfaf9d9b0b9831a174"
   }
 ].concat(self.__precacheManifest || []);
+
+// Adding by Hanzel
+self.__precacheManifest = self.__precacheManifest.map((el) => ({ ...el, 'url': `./${el.url}` }));
+
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
@@ -411,7 +411,9 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-ed9ef136ac2a16c13a7e.js`))) {
+  
+  // Ajusts by Hanzel
+  if (!resources || !(await caches.match(`./app-ed9ef136ac2a16c13a7e.js`))) {
     return await fetch(event.request)
   }
 
@@ -424,7 +426,8 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  // Ajusts by Hanzel
+  const offlineShell = `./offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
