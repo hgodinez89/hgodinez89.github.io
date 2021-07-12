@@ -15,6 +15,7 @@
 
 ## What’s In This Document
 
+- [What’s In This Document](#whats-in-this-document)
 - [Who I am?](#who-i-am)
 - [What is this?](#what-is-this)
 - [Version History](#version-history)
@@ -66,7 +67,7 @@ Thanks for your visiting! 👍
 ## Have questions?
 
 If you have questions or just need any help, feel free to write me 
-<a href="mailto:hgodinez89@hotmail.com">hgodinez89@hotmail.com</a>
+<a href="mailto:hanzelgodinez@gmail.com">hanzelgodinez@gmail.com</a>
 
 ## Thanks
 
