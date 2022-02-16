@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://hanzelgodinez.dev/">
+  <a href="https://hanzelgodinez.com/">
     <img src="https://res.cloudinary.com/developerteam/image/upload/v1578798463/PortfolioWeb/favicon_wc1uzv.png" alt="Logo" width=180 height=180>
   </a>
 
@@ -28,7 +28,7 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://hanzelgodinez.dev">
+      <a href="https://hanzelgodinez.com">
          <img src="https://avatars1.githubusercontent.com/u/14959862?s=400&u=90bf1dc4cc8b202ef3a35a16999e163deda9e2f9&v=4" width="100px;" alt="Hanzel Godinez"/><br />
          <sub><b>Hanzel Godinez</b></sub>
       </a>
@@ -45,7 +45,7 @@ learn a lot from others persons and share a lot of knowledge.
 
 ## What is this?
 
-This my personal website, you could enter in the url <a href="https://hanzelgodinez.dev">https://hanzelgodinez.dev</a> and 
+This my personal website, you could enter in the url <a href="https://hanzelgodinez.com">https://hanzelgodinez.com</a> and 
 you will find information about me and my work. It was create with HTML, CSS, JavaScript and GatsbyJS. </br> </br>
 Thanks for your visiting! 👍
 
