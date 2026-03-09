@@ -58,8 +58,25 @@ typings/
 dist/
 .astro/
 
-# Gatsby legacy
+# Gatsby legacy build artifacts
 .cache/
+public/*.js
+public/*.js.map
+public/*.css
+public/*.json
+public/404.html
+public/404/
+public/es/
+public/favicon.ico
+public/icons/
+public/index.html
+public/page-data/
+public/sitemap.xml
+public/static/
+public/manifest.webmanifest
+
+# Claude memory
+.claude/
 
 # Mac files
 .DS_Store
