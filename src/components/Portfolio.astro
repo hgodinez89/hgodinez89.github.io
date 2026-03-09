@@ -1,0 +1,32 @@
+---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+import CardPortfolio from './CardPortfolio';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class="w-10/12 md:max-w-6xl mx-auto mt-20">
+  <h2 id="porfolio" class="text-4xl font-bold text-center text-gray-800">{t('portfolio')}</h2>
+  <div class="flex justify-center">
+    <p class="mt-6 text-base font-light text-center text-gray-700 md:mt-20">
+      {t('projects')}
+    </p>
+  </div>
+  <div class="h-1 mx-auto bg-indigo-200 w-24 opacity-75 mt-4 rounded"></div>
+  <div
+    class="flex justify-center mt-8 md:mt-12"
+    data-sal="zoom-out"
+    data-sal-delay="300"
+    data-sal-easing="easeInOutQuart"
+  >
+    <div class="flex overflow-x-auto">
+      <CardPortfolio client:idle />
+    </div>
+  </div>
+</div>

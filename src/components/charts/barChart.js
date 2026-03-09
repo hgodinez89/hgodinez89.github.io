@@ -1,9 +1,10 @@
-import barChart from 'britecharts/dist/umd/bar.min'
+import barChart from 'britecharts/dist/umd/charts/bar.min.js'
 import { select } from 'd3-selection'
 import { validateConfiguration, validateContainer } from '../../helpers/validation'
 import { applyConfiguration } from '../../helpers/configuration'
 
-import { bar as barLoadingState } from 'britecharts/dist/umd/loading.min'
+import loadingModule from 'britecharts/dist/umd/charts/loading.min.js'
+const barLoadingState = loadingModule.loading ?? loadingModule
 
 const bar = {}
 

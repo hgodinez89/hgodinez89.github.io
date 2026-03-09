@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  lang?: string;
+  title?: string;
+  description?: string;
+}
+
+const {
+  lang = 'en',
+  title = 'Hanzel Godinez',
+  description = "Hanzel's portfolio — software developer",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="Software Developer, Desarrollador de Software, Ingeniero en Sistemas" />
+    <meta name="author" content="Hanzel Godinez" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://hanzelgodinez.dev" />
+    <meta property="og:image" content="/imgs/avatar.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@GodinezHanzel" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="icon" href="/imgs/favicon.png" type="image/png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+
+    <!-- SAL scroll-reveal init -->
+    <script>
+      import sal from 'sal.js';
+      sal({ threshold: 0.2, once: true, rootMargin: '0% 50%' });
+    </script>
+  </body>
+</html>

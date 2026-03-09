@@ -2,48 +2,40 @@
   "name": "portfolio",
   "private": true,
   "description": "Portfolio Website of Hanzel",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,astro,json,md}\"",
+    "deploy": "astro build && gh-pages -d dist -b master"
   },
   "dependencies": {
-    "britecharts-react": "^0.5.3",
-    "emailjs-com": "^2.4.1",
-    "gatsby": "^2.18.12",
-    "gatsby-plugin-google-analytics": "^2.1.31",
-    "gatsby-plugin-i18n": "^1.0.1",
-    "gatsby-plugin-manifest": "^2.2.34",
-    "gatsby-plugin-postcss": "^2.1.18",
-    "gatsby-plugin-react-helmet": "^3.1.18",
-    "gatsby-plugin-scroll-reveal": "0.0.4",
-    "gatsby-plugin-sitemap": "^2.2.24",
-    "gatsby-plugin-smoothscroll": "^1.0.4",
-    "gatsby-source-filesystem": "^2.1.43",
-    "gatsby-transformer-json": "^2.2.22",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "@astrojs/react": "^4.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "@emailjs/browser": "^4.0.0",
+    "astro": "^5.0.0",
+    "britecharts": "^2.18.2",
+    "d3-dispatch": "^3.0.1",
+    "d3-selection": "^3.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sal.js": "^0.8.5"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1",
-    "tailwindcss": "^1.1.4"
+    "@tailwindcss/vite": "^4.0.0",
+    "gh-pages": "^6.0.0",
+    "kleur": "^4.1.5",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "tailwindcss": "^4.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hgodinez89/hgodinez89.github.io"
-  },
-  "bugs": {
-    "url": "https://github.com/hgodinez89/hgodinez89.github.io/issues"
-  },
-  "scripts": {
-      "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }

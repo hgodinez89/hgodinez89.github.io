@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-site",
+  "short_name": "portfolio-site",
+  "start_url": "/",
+  "background_color": "#6b37bf",
+  "theme_color": "#6b37bf",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/imgs/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
