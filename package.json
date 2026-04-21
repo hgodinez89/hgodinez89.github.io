@@ -17,7 +17,7 @@
     "@astrojs/react": "^4.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@emailjs/browser": "^4.0.0",
-    "astro": "^5.0.0",
+    "astro": "^6.1.6",
     "britecharts": "^2.18.2",
     "d3-dispatch": "^3.0.1",
     "d3-selection": "^3.0.0",
